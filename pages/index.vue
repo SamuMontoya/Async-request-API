@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container class="mt-5">
     <h1>Aplicación de divisas</h1>
     <div>
       <b-form>
@@ -27,7 +27,9 @@
         ></b-form-input>
         <b-form-datalist id="input-list-2" :options="options"></b-form-datalist>
 
-        <b-button class="mt-3" variant="primary" @click="submitForm">Submit</b-button>
+        <b-button class="mt-3" variant="primary" @click="submitForm"
+          >Submit</b-button
+        >
       </b-form>
     </div>
   </b-container>
@@ -36,7 +38,6 @@
 <script>
 export default {
   name: "IndexPage",
-  
   data() {
     return {
       monto: null,
@@ -45,8 +46,11 @@ export default {
       options: ["1", "2", "3", "4", "5"],
     };
   },
-  methods: {
 
-  }
+  methods: {
+    submitForm() {
+      alert("form-submited");
+    },
+  },
 };
 </script>
