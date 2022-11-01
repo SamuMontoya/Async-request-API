@@ -3,7 +3,7 @@
   <div>
     <button @click="divisaPrecio">Divisas con precio</button>
     <p>{{ precios }}</p>
-    <hr />
+    <br />
     <button @click="divisaNombres">Nombres Divisas</button>
     <p>{{ nombres }}</p>
   </div>
